@@ -1,0 +1,107 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: $accept-bg-color;
+
+  .footer__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primery-bg-color;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0px;
+  }
+
+  .footer__container {
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+      align-items: baseline;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .footer-contaсt {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 61px;
+      margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+
+  .footer-contaсt__address {
+    align-items: center;
+    margin-top: 20px;
+    font-style: normal;
+    color: $primery-bg-color;
+  }
+
+  .footer-contaсt__link {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer-contaсt__list {
+    margin: 0;
+  }
+
+  .footer-contaсt__item:last-child {
+    margin-top: 9px;
+  }
+
+  /* FOOTER-SOCIAL-LINKS */
+
+  .footer-social-links {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+  .footer-social-links__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social-links__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer-social-links__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: $accept-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .footer-social-links__icon {
+    fill: $primery-bg-color;
+  }
+}
